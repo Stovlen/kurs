@@ -1,0 +1,149 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap');
+
+/**{
+    border: 1px solid red;
+}*/
+
+html,
+body {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: normal;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1490px;
+    /* змінено width на max-width */
+}
+
+/* Nav */
+
+.nav {
+    padding: 10px 0;
+    background-color: #43B02A;
+    color: #FFFFFF;
+}
+
+.nav-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.main {
+    font-size: 28px;
+    font-weight: 500;
+    flex-grow: 1;
+    /* додано flex-grow */
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    column-gap: 38px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.nav-list_link {
+    color: #FFFFFF;
+    transition: opacity 0.2s ease-in;
+}
+
+.nav-list_link:hover {
+    opacity: 0.85px;
+}
+
+.nav-list_link:active {
+    position: relative;
+}
+
+/* Header */
+
+.header {
+    padding: 40px 50px;
+    min-height: 750px;
+
+}
+
+.header__wrapper {
+    padding: 0 15px;
+    max-width: 1400px;
+    /* Додав це, щоб вирівнювати за центром */
+}
+
+.header__title {
+    font-size: 32px;
+    font-weight: 500;
+    color: black;
+
+}
+
+.line {
+    width: 100vw;
+    /* Змінив ширину на 100vw (відносно всього видимого вікна) */
+    height: 1px;
+    background-color: black;
+    margin-top: 25px;
+    margin-left: calc(-50vw + 50%);
+    /* Вирівнюємо вліво на 50% ширини вікна */
+}
+
+.header__title1 {
+    margin-top: 45px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    color: black;
+}
+
+.checkmark {
+    text-align: center;
+    align-items: center;
+    margin-top: 43px;
+}
+
+.header__title2 {
+    margin-top: 63px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 10px; /* Додав цей маргін */
+}
+
+/* Footer */
+
+.footer {
+    background-color: #43B02A;
+    padding: 40px 0 43px;
+        
+}
+
+.footer_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 35px;
+}
+
+.social {
+    display: flex;
+    column-gap: 46px;
+    align-items: center;
+}
+
+.about {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.about-list_link {
+    color: white;
+}

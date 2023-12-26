@@ -1,0 +1,447 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap');
+
+/**{
+    border: 1px solid red;
+}*/
+
+html,
+body {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: normal;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1490px;
+    /* змінено width на max-width */
+}
+
+/* Nav */
+
+.nav {
+    padding: 10px 0;
+    background-color: #43B02A;
+    color: #FFFFFF;
+}
+
+.nav-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.main {
+    font-size: 28px;
+    font-weight: 500;
+    flex-grow: 1;
+    /* додано flex-grow */
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    column-gap: 38px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.nav-list_link {
+    color: #FFFFFF;
+    transition: opacity 0.2s ease-in;
+}
+
+.nav-list_link:hover {
+    opacity: 0.85px;
+}
+
+.nav-list_link:active {
+    position: relative;
+}
+
+/* Header */
+
+.header {
+    padding: 40px 50px;
+    min-height: 1200px;
+
+}
+
+.header__wrapper {
+    padding: 0 15px;
+    max-width: 1400px;
+    /* Додав це, щоб вирівнювати за центром */
+}
+
+.header__title {
+    font-size: 32px;
+    font-weight: 500;
+    color: black;
+    
+}
+
+.line {
+    width: 100vw;
+    /* Змінив ширину на 100vw (відносно всього видимого вікна) */
+    height: 2px;
+    background-color: black;
+    margin-top: 25px;
+    margin-left: calc(-50vw + 50%);
+    /* Вирівнюємо вліво на 50% ширини вікна */
+}
+
+.about1 {
+    margin-top: 20px;
+    font-size: 18px;
+
+}
+
+.header__titles {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.header__subtitle {
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+    margin-right: 180px;
+}
+
+.header__subtitle1 {
+    margin-top: 35px;
+    font-size: 26px;
+    font-weight: 500;
+    color: black;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.form-container {
+    width: 440px;
+    height: 550px;
+    border-radius: 10px;
+    background-color: #FF7051;
+    padding: 20px;
+    margin-top: 45px;
+
+}
+
+.title1 {
+    position: absolute;
+    top: 480px;
+    /* Розміщуємо заголовки вгорі форми */
+    right: 600px;
+    /* Встановлюємо відстань справа */
+    font-size: 22px;
+    font-weight: 500;
+    color: black;
+}
+
+.title2 {
+    position: absolute;
+    top: 480px;
+    /* Розміщуємо заголовки вгорі форми */
+    right: 180px;
+    /* Встановлюємо відстань справа */
+    font-size: 22px;
+    font-weight: 500;
+    color: black;
+}
+
+.title3 {
+    position: absolute;
+    top: 680px;
+    /* Розміщуємо заголовки вгорі форми */
+    right: 510px;
+    /* Встановлюємо відстань справа */
+    font-size: 22px;
+    font-weight: 500;
+    color: black;
+}
+
+.title4 {
+    position: absolute;
+    top: 680px;
+    /* Розміщуємо заголовки вгорі форми */
+    right: 160px;
+    /* Встановлюємо відстань справа */
+    font-size: 22px;
+    font-weight: 500;
+    color: black;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-field,
+.form-textarea {
+    width: 380px;
+    height: 65px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    background-color: white;
+    /* Білий колір для полів введення */
+    border: 1px solid #ccc;
+    /* Додайте рамку для розділення від форми */
+    border-radius: 7px;
+    /* Округліть кути полів */
+    font-size: 18px;
+}
+
+.form-textarea {
+    height: 230px;
+    font-size: 18px;
+}
+
+.btn {
+
+    padding: 9px 36px;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: #FFC600;
+    color: black;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    transition: opacity 0.2s ease-in;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+}
+
+.btn1 {
+
+    position: absolute;
+    top: 520px;
+    /* Розміщуємо заголовки вгорі форми */
+    right: 635px;
+
+    padding: 9px 36px;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: #FFC600;
+    color: black;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    transition: opacity 0.2s ease-in;
+}
+
+.btn1:hover {
+    opacity: 0.8;
+}
+
+
+.btn2 {
+
+    position: absolute;
+    top: 720px;
+    /* Розміщуємо заголовки вгорі форми */
+    right: 635px;
+
+    padding: 9px 36px;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: #FFC600;
+    color: black;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    transition: opacity 0.2s ease-in;
+}
+
+.btn2:hover {
+    opacity: 0.8;
+}
+
+
+.btn3 {
+
+    position: absolute;
+    top: 520px;
+    /* Розміщуємо заголовки вгорі форми */
+    right: 270px;
+
+    padding: 9px 36px;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: #FFC600;
+    color: black;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    transition: opacity 0.2s ease-in;
+}
+
+.btn3:hover {
+    opacity: 0.8;
+}
+
+
+.btn4 {
+
+    position: absolute;
+    top: 720px;
+    /* Розміщуємо заголовки вгорі форми */
+    right: 268px;
+
+    padding: 9px 36px;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: #FFC600;
+    color: black;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    transition: opacity 0.2s ease-in;
+}
+
+.btn4:hover {
+    opacity: 0.8;
+}
+
+.line1 {
+    position: absolute;
+    top: 620px;
+    /* Розміщуємо заголовки вгорі форми */
+    right: 595px;
+    width: 210px;
+    /* Змінив ширину на 100vw (відносно всього видимого вікна) */
+    height: 1px;
+    background-color: black;
+    /* Вирівнюємо вліво на 50% ширини вікна */
+}
+
+.line2 {
+    position: absolute;
+    top: 620px;
+    /* Розміщуємо заголовки вгорі форми */
+    right: 230px;
+    width: 210px;
+    /* Змінив ширину на 100vw (відносно всього видимого вікна) */
+    height: 1px;
+    background-color: black;
+    /* Вирівнюємо вліво на 50% ширини вікна */
+}
+
+.line3 {
+    position: absolute;
+    top: 820px;
+    /* Розміщуємо заголовки вгорі форми */
+    right: 230px;
+    width: 210px;
+    /* Змінив ширину на 100vw (відносно всього видимого вікна) */
+    height: 1px;
+    background-color: black;
+    /* Вирівнюємо вліво на 50% ширини вікна */
+}
+
+.line4 {
+    position: absolute;
+    top: 820px;
+    /* Розміщуємо заголовки вгорі форми */
+    right: 595px;
+    width: 210px;
+    /* Змінив ширину на 100vw (відносно всього видимого вікна) */
+    height: 1px;
+    background-color: black;
+    /* Вирівнюємо вліво на 50% ширини вікна */
+}
+
+.title5 {
+    position: absolute;
+    top: 580px;
+    /* Розміщуємо заголовки вгорі форми */
+    right: 700px;
+    /* Встановлюємо відстань справа */
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+.title6 {
+    position: absolute;
+    top: 580px;
+    /* Розміщуємо заголовки вгорі форми */
+    right: 335px;
+    /* Встановлюємо відстань справа */
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+.title7 {
+    position: absolute;
+    top: 780px;
+    /* Розміщуємо заголовки вгорі форми */
+    right: 700px;
+    /* Встановлюємо відстань справа */
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+.title8 {
+    position: absolute;
+    top: 780px;
+    /* Розміщуємо заголовки вгорі форми */
+    right: 335px;
+    /* Встановлюємо відстань справа */
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #43B02A;
+    padding: 40px 0 43px;
+
+}
+
+.footer_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 35px;
+}
+
+.social {
+    display: flex;
+    column-gap: 46px;
+    align-items: center;
+}
+
+.about {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.about-list_link {
+    color: white;
+}

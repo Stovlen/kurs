@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ремонт ПК</title>
+    <link rel="stylesheet" href="./css/repair.css" </head>
+
+<body>
+    <script src="./js/script1.js"></script>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-row">
+                <div class="logo"><img src="./img/logo.png"></div>
+                <div class="main"><a href="index.html" class="nav-list_link">Ремонт та модернізація ПК</a></div>
+                <ul class="nav-list">
+                    <li class="nav-list_item"><a href="#!" class="nav-list_link">Зареєструватися</a></li>
+                    <li class="nav-list_item"><a href="#!" class="nav-list_link">Увійти</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="header__wrapper">
+            <h1 class="header__title">
+                Ремонт комп'ютерів
+            </h1>
+            <div class="line"></div>
+            <div class="about1">
+                <p>Ремонт комп'ютерів (ПК) – це технічно складний процес, який слід довірити профільним фахівцям. Спроби
+                    самостійно
+                    провести діагностику та усунути несправність у переважній більшості випадків не тільки не приносять
+                    бажаних результатів,
+                    а й можуть обернутися різними проблемами, починаючи від поломки інших модулів комп'ютера і
+                    закінчуючи доведенням техніки
+                    до повної непридатності до ремонту. Наші фахівці можуть швидко і якісно здійснити ремонт ПК як у
+                    сервісному центрі так і
+                    у вас вдома.</p>
+            </div>
+
+            <div class="header__titles">
+                <h2 class="header__subtitle">Професійний ремонт ПК</h2>
+                <h2 class="header__subtitle">Найпоширеніші види ремонтів</h2>
+            </div>
+            <div class="form-container">
+                <form class="repair-form" onsubmit="return validateForm()">
+                    <div class="form-group">
+                        <input type="text" placeholder="*Ім'я" class="form-field" name="name" required>
+                        <div id="name-warning" style="color: red;"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="*Телефон" class="form-field" name="phone" required>
+                        <div id="phone-warning" style="color: red;"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="*Опишіть проблему" class="form-textarea" name="problem" required></textarea>
+                        <div id="problem-warning" style="color: red;"></div>
+                    </div>
+                    <button type="submit" class="btn">Викликати майстра</button>
+                    <div id="warning-message" style="color: red;"></div>
+                </form>
+            </div>
+
+            <div class="title1">Ремонт відеокарти</div>
+            <a href="oformlennya.html" class="btn1">Замовити</a>
+            <div class="title2">Ремонт блоку живлення</div>
+            <a href="oformlennya.html" class="btn2">Замовити</a>
+            <div class="title3">Чистка та профілактика ПК</div>
+            <a href="oformlennya.html" class="btn3">Замовити</a>
+            <div class="title4">Модернізація комп'ютера</div>
+            <a href="oformlennya.html" class="btn4">Замовити</a>
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <div class="line4"></div>
+
+            <div class="title5">від 200 грн</div>
+            <div class="title6">від 500 грн</div>
+            <div class="title7">від 300 грн</div>
+            <div class="title8">від 400 грн</div>
+
+            <h2 class="header__subtitle1"><strong>Переваги звернення до нас</strong></h2>
+            <div class="about1">
+                <p>Наш сервісний центр з ремонту комп'ютерів надає повний спектр послуг з відновлення працездатності ПК і його
+                    профілактики. Перш, ніж приступити до роботи, наші майстри проводять професійну експрес-діагностику, під час
+                    якої
+                    виявляються всі несправності.<br><br>
+                    Після цього ми запропонуємо вам оптимальний варіант вирішення проблеми. Це може бути ремонт окремих
+                    комплектуючих або
+                    повна заміна модуля, що вийшов з ладу, на аналогічний або більш продуктивний за умови сумісності з іншим
+                    "залізом".<br><br>
+                    Завдяки великому практичному досвіду і високій кваліфікації, наші інженери можуть усунути несправність
+                    будь-якого типу,
+                    починаючи від заміни кулера і закінчуючи ремонтом материнських плат.<br><br>
+                    Звертатися до фахівців нашої комп'ютерної майстерні зручно і вигідно, тому що:<br><br>
+                    1. Ми здійснюємо ремонт ПК будь-яких виробників.<br>
+                    2. Ми усуваємо більшість несправностей протягом 1-2 годин.<br>
+                    3. Наші майстри проводять усі необхідні ремонтні роботи вдома у замовника, в офісі або в умовах сервісного
+                    центру.<br>
+                    4. Ми надаємо гарантію на всі замінені або відремонтовані комплектуючі. <br>
+                    5. На нові запчастини поширюється офіційна гарантія від виробника.<br>
+                    6. Наші фахівці можуть виїхати в будь-який район міста у зручний для вас час.<br><br>
+                    Щоб замовити послуги з налаштування та ремонту ПК (комп'ютера) – залиште заявку на виїзд фахівця на сайті.
+                </p>
+</header>
+        
+    <footer class="footer">
+            <div class="footer_wrapper">
+                <ul class="social">
+                    <li class="social__item"><a href="#!"><img src="./img/Viber.png" alt="Link"></a></li>
+                    <li class="social__item"><a href="#!"><img src="./img/Inst.png" alt="Link"></a></li>
+                    <li class="social__item"><a href="#!"><img src="./img/Whatsapp.png" alt="Link"></a></li>
+                </ul>
+                <ul class="about">
+                    <li class="about__item"><a href="#!" class="about-list_link">Контакти</a></li>
+                    <li class="about__item"><a href="#!" class="about-list_link">Trade In</a></li>
+                    <li class="about__item"><a href="#!" class="about-list_link">Безпека</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
